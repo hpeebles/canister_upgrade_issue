@@ -1,0 +1,7 @@
+dfx deploy
+uncomment the panic in lib.rs on line 11
+dfx build
+dfx canister install demo --mode=upgrade
+re-comment out the panic
+dfx build
+dfx canister install demo --mode=upgrade
